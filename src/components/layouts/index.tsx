@@ -1,36 +1,19 @@
-import React from "react";
-import { css } from "emotion";
+import styled from "@emotion/styled";
 import { marginL, paddingL } from "../../constrants/style";
 
-const Page: React.FC = props => {
-  const { children } = props;
+const Page = styled("div")({
+  display: "flex"
+});
 
-  const pageStyle = css({
-    display: "flex"
-  });
-  return <div className={pageStyle}>{children}</div>;
-};
+const Section = styled("section")({
+  padding: paddingL,
+  marginBottom: marginL
+});
 
-const Section: React.FC = props => {
-  const { children } = props;
-
-  const sectionStyle = css({
-    padding: paddingL,
-    marginBottom: marginL
-  });
-  return <section className={sectionStyle}>{children}</section>;
-};
-
-const Content: React.FC = props => {
-  const { children } = props;
-
-  const contentStyle = css({
-    height: "100vh",
-    width: "100%",
-    overflow: "hidden scroll"
-  });
-
-  return <div className={contentStyle}>{children}</div>;
-};
+const Content = styled("div")({
+  height: "100vh",
+  width: "100%",
+  overflow: "hidden scroll"
+});
 
 export { Page, Section, Content };
