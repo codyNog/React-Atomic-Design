@@ -1,6 +1,6 @@
 import React from "react";
-import { css } from "emotion";
-
+import styled from "@emotion/styled";
+/* 
 interface IPropsHeading {
   style?: React.CSSProperties;
 }
@@ -51,6 +51,14 @@ const H4: React.FC<IPropsHeading> = props => {
   });
 
   return <h4 className={h4Style}>{children}</h4>;
-};
+}; */
 
-export { H1, H2, H3, H4 };
+const H1 = styled("h1")({
+  fontSize: 24
+});
+
+const H2 = styled("h2")({
+  fontSize: 16
+});
+
+export { H1, H2 };
