@@ -1,6 +1,6 @@
 import React from "react";
 import { H2 } from "../atoms/Heading";
-import Button from "../atoms/Button";
+import Button from "../atoms/button/Button";
 import { css } from "emotion";
 import { marginM, paddingM, marginS } from "../../constrants/style";
 
