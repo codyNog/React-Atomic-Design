@@ -1,6 +1,7 @@
 import React from "react";
 import { Section } from "../layouts";
 import Post from "../molecules/Post";
+import { marginM } from "../../constrants/style";
 
 interface Post {
   title: string;
@@ -17,7 +18,12 @@ const Posts: React.FC<IPropsPosts> = props => {
   return (
     <Section>
       {posts.map((post, i) => (
-        <Post key={`post${i}`} title={post.title} detail={post.detail} />
+        <Post
+          key={`post${i}`}
+          style={{ marginBottom: marginM }}
+          title={post.title}
+          detail={post.detail}
+        />
       ))}
     </Section>
   );

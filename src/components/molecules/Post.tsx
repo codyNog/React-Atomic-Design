@@ -25,8 +25,7 @@ const Post: React.FC<IPropsPost> = props => {
       alignItems: "center",
       border: "1px solid grey",
       borderRadius: 4,
-      padding: paddingM,
-      marginBottom: marginM
+      padding: paddingM
     },
     ...style
   });
