@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { H2 } from "../atoms/Heading";
-import Button from "../atoms/button/Button";
+import { H2 } from "../atoms/heading/Heading";
+import Button from "../atoms/buttons/Button";
 import { marginM, paddingM, marginS } from "../../constrants/style";
 import { CSSProperties } from "@emotion/serialize";
 
