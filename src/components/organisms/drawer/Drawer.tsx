@@ -1,6 +1,6 @@
 import React from "react";
 import { css } from "emotion";
-import { primaryColor } from "../../constrants/style";
+import { primaryColor } from "../../../constrants/style";
 
 const Drawer: React.FC = () => {
   const drawerStyle = css({

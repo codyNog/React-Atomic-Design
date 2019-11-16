@@ -1,6 +1,6 @@
 import React from "react";
 import { css } from "emotion";
-import { secondaryColor } from "../../constrants/style";
+import { secondaryColor } from "../../../constrants/style";
 
 const Header: React.FC = () => {
   const headerStyle = css({

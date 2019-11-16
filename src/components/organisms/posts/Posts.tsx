@@ -1,7 +1,7 @@
 import React from "react";
-import { Section } from "../layouts";
-import Post from "../molecules/post/Post";
-import { marginM } from "../../constrants/style";
+import { Section } from "../../layouts";
+import Post from "../../molecules/post/Post";
+import { marginM } from "../../../constrants/style";
 
 interface Post {
   title: string;
