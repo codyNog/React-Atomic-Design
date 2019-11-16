@@ -6,5 +6,5 @@ import { withKnobs, text, boolean } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
 import HomeTemplate from "./HomeTemplate";
 
-const homeTemplate = storiesOf("templates/home", module);
+const homeTemplate = storiesOf("templates", module);
 homeTemplate.addDecorator(withKnobs).add("Home", () => <HomeTemplate />);
