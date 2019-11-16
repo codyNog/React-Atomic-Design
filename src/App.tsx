@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./App.css";
-import HomePage from "./components/pages/HomePage";
+import HomePage from "./components/pages/home/HomePage";
 import Media from "./store/mediaContainer";
 
 const AppContent: React.FC = () => {
