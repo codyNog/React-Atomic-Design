@@ -4,7 +4,8 @@ import styled from "@emotion/styled";
 const Select = styled("select")({
   height: 30,
   width: 100,
-  fontSize: 20
+  fontSize: 20,
+  [`:focus`]: { outline: "none" }
 });
 
 const Option = styled("option")({});
