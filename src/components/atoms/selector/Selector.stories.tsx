@@ -1,8 +1,12 @@
-import React from "react";
-
+import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 import { withKnobs } from "@storybook/addon-knobs";
+import { State, Store, StateDecorator } from "@sambego/storybook-state";
 import Selector from "./Selector";
+
+const store = new Store({
+  value: "0"
+});
 
 const option = (i: number) => {
   return { value: `${i}`, label: `${i}` };
@@ -17,6 +21,12 @@ const options = () => {
 };
 
 const selector = storiesOf("atoms", module);
-selector
-  .addDecorator(withKnobs)
-  .add("Selector", () => <Selector options={options()} />);
+selector.add("Selector", () => (
+  <State store={store}>
+    <Selector
+      value={store.get("value")}
+      onChange={e => store.set({ value: e.currentTarget.value })}
+      options={options()}
+    />
+  </State>
+));

@@ -16,14 +16,16 @@ interface IOption {
 }
 
 interface IPropsSelector {
+  value: string | number;
+  onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
   options: IOption[];
 }
 
 const Selector: React.FC<IPropsSelector> = props => {
-  const { options } = props;
+  const { value, onChange, options } = props;
 
   return (
-    <Select>
+    <Select value={value} onChange={onChange}>
       {options.map((option, i) => {
         const { value, label } = option;
         return <Option value={value}>{label}</Option>;
