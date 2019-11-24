@@ -2,9 +2,9 @@ import React from "react";
 
 import { storiesOf } from "@storybook/react";
 import { withKnobs } from "@storybook/addon-knobs";
-import Button from "./Button";
-import DangerButton from "./DangerButton";
-import WarningButton from "./WarningButton";
+import Button from "./common";
+import DangerButton from "./danger";
+import WarningButton from "./warning";
 import { marginM } from "../../../constrants/style";
 
 const button = storiesOf("atoms", module);
