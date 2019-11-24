@@ -16,4 +16,13 @@ const Content = styled("div")({
   overflow: "hidden scroll"
 });
 
-export { Page, Section, Content };
+const Columns = styled("div")({
+  display: "flex"
+});
+
+const Rows = styled("div")({
+  display: "flex",
+  flexDirection: "row"
+});
+
+export { Page, Section, Content, Columns, Rows };
