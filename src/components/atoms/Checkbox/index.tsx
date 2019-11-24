@@ -7,6 +7,7 @@ interface IPropsCheckBox {
   checked: boolean;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   label: string | number;
+  style?: React.CSSProperties;
 }
 
 const Wrapper = styled("label")({
@@ -15,9 +16,9 @@ const Wrapper = styled("label")({
 });
 
 const Checkbox: React.FC<IPropsCheckBox> = props => {
-  const { checked, onChange, label } = props;
+  const { checked, onChange, label, style } = props;
   return (
-    <Wrapper>
+    <Wrapper style={style}>
       <Check checked={checked} onChange={onChange} />
       <Label>{label}</Label>
     </Wrapper>
